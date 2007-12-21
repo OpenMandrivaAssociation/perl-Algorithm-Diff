@@ -15,6 +15,7 @@ Source:         http://www.cpan.org/modules/by-module/Algorithm/%{module}-%{vers
 Buildrequires:  perl-devel
 %endif
 Buildarch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This module compute `intelligent' differences between two files / lists.
