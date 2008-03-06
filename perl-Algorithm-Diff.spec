@@ -1,7 +1,7 @@
 %define module  Algorithm-Diff
 %define name    perl-%{module}
 %define version 1.1902
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name:           %{name}
 Version:        %{version}
