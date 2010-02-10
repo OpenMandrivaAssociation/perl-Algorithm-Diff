@@ -1,27 +1,27 @@
-%define module  Algorithm-Diff
-%define name    perl-%{module}
-%define version 1.1902
-%define release %mkrel 5
+%define upstream_name    Algorithm-Diff
+%define upstream_version 1.1902
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
-Summary:        Compute `intelligent' differences between two files / lists
-License:        GPL or Artistic
-Group:          Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Algorithm/%{module}-%{version}.tar.bz2
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Compute `intelligent' differences between two files / lists
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Algorithm/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 Buildrequires:  perl-devel
 %endif
 Buildarch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module compute `intelligent' differences between two files / lists.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -42,4 +42,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{perl_vendorlib}/Algorithm
 %{_mandir}/*/*
-
