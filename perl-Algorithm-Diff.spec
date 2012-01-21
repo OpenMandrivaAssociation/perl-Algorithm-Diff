@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 Epoch:      1
 
 Summary:    Compute `intelligent' differences between two files / lists
@@ -11,10 +11,7 @@ License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Algorithm/%{upstream_name}-%{upstream_version}.tar.bz2
-
-%if %{mdkversion} < 1010
 Buildrequires:  perl-devel
-%endif
 Buildarch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
