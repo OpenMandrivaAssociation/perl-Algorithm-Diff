@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 6
+Release:    7
 Epoch:      1
 
 Summary:    Compute `intelligent' differences between two files / lists
