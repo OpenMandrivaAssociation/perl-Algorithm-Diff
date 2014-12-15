@@ -1,15 +1,15 @@
 %define upstream_name    Algorithm-Diff
-%define upstream_version 1.1902
+%define upstream_version 1.1903
 
 Summary:	Compute `intelligent' differences between two files / lists
 Epoch:	1
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	14
+Release:	1
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{upstream_name}-%{upstream_version}.tar.gz
 Buildarch:	noarch
 Buildrequires:	perl-devel
 
@@ -20,7 +20,7 @@ This module compute `intelligent' differences between two files / lists.
 %setup -qn %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %install
@@ -33,4 +33,3 @@ make test
 %doc README Changes
 %{perl_vendorlib}/Algorithm
 %{_mandir}/man3/*
-
