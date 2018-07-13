@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{upstream_name}-%{upstream_version}.tar.gz
 Buildarch:	noarch
+Buildrequires:	perl(Test)
 Buildrequires:	perl-devel
 
 %description
