@@ -2,13 +2,13 @@
 %define upstream_version 1.1903
 
 Summary:	Compute `intelligent' differences between two files / lists
-Epoch:	1
+Epoch:		1
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	5
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		http://metacpan.org/pod/Algorithm::Diff
 Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{upstream_name}-%{upstream_version}.tar.gz
 Buildarch:	noarch
 Buildrequires:	perl(Test)
