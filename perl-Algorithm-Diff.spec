@@ -1,11 +1,11 @@
 %define upstream_name    Algorithm-Diff
-%define upstream_version 1.1903
+%define upstream_version 1.201
 
 Summary:	Compute `intelligent' differences between two files / lists
 Epoch:		1
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Release:	1
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Algorithm::Diff
