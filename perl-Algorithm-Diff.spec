@@ -8,7 +8,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	2
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Algorithm::Diff
+Url:		https://metacpan.org/pod/Algorithm::Diff
 Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{upstream_name}-%{upstream_version}.tar.gz
 Buildarch:	noarch
 Buildrequires:	perl(Test)
